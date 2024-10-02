@@ -80,6 +80,155 @@ Test Increment Counter
 ```
 
 
+## Browser: principais comandos
+
+### Comandos Comuns da Library Browser
+
+1. New Browser
+- Abre uma nova instância de navegador.
+- Sintaxe: New Browser \<browser type\>
+- Parâmetros:
+\<browser type\>: pode ser chromium, firefox, webkit ou chrome.
+- Exemplo:
+`New Browser  chromium`
+
+2. New Page
+- Abre uma nova página (aba) no navegador.
+- Sintaxe: New Page \<url\>
+- Parâmetro: 
+\<url\>: URL a ser carregada na nova aba.
+- Exemplo
+`New Page  http://localhost:8080`
+
+3. Set Viewport Size
+- Define o tamanho da janela do navegador.
+- Sintaxe: Set Viewport Size \<width\> \<height\>
+- Parâmetros:
+\<width\>: largura da janela (em pixels).
+\<height\>: altura da janela (em pixels).
+Exemplo:
+`Set Viewport Size  1920  1080`
+
+4. Click
+- Clica em um elemento.
+- Sintaxe: Click \<selector\>
+- Parâmetro:
+\<selector\>: seletor para localizar o elemento.
+- Exemplo:
+`Click  xpath=//button[@id='login']`
+
+5. Wait For Elements State
+- Espera até que o estado de um elemento atinja uma condição desejada.
+- Sintaxe: Wait For Elements State \<selector\> \<state\> \<timeout\>
+- Parâmetros:
+\<selector\>: seletor para localizar o elemento.
+\<state\>: o estado esperado (visible, hidden, enabled, disabled, etc.).
+\<timeout\>: tempo de espera máximo.
+- Exemplo:
+`Wait For Elements State  xpath=//button[@id='login']  visible  10s`
+
+6. Get Text
+- Retorna o texto de um elemento.
+- Sintaxe: Get Text \<selector\>
+- Parâmetro:
+\<selector\>: seletor para localizar o elemento.
+Exemplo:
+`${text}=  Get Text  xpath=//h1[@id='title']`
+
+7. Input Text
+- Insere texto em um campo de entrada.
+- Sintaxe: Input Text \<selector\> \<text\>
+- Parâmetro:
+\<selector\>: seletor para localizar o campo de entrada.
+\<text\>: o texto a ser inserido.
+- Exemplo:
+`Input Text  xpath=//input[@id='username']  my_user`
+
+8. Press Keys
+Simula a pressão de teclas no elemento ou na página.
+- Sintaxe: Press Keys \<selector\> \<keys\>
+- Parâmetro:
+\<selector\>: seletor (pode ser omitido para acionar teclas globais).
+\<keys\>: uma string representando as teclas (Enter, Tab, ArrowRight, etc.).
+- Exemplo:
+`Press Keys  xpath=//input[@id='password']  Enter`
+
+9. Get Title
+- Retorna o título da página.
+- Sintaxe: Get Title
+- Exemplo:
+`${title}=  Get Title`
+
+10. Get Url
+- Retorna a URL atual da página.
+- Sintaxe: Get Url
+- Exemplo:
+`${current_url}=  Get Url`
+
+11. Go To
+- Navega para uma URL específica.
+- Sintaxe: Go To \<url\>
+- Parâmetro:
+\<url\>: URL para a qual você deseja navegar.
+Exemplo:
+`Go To  https://example.com`
+
+12. Reload
+- Recarrega a página atual.
+- Sintaxe: Reload
+- Exemplo:
+`Reload`
+
+13. Screenshot
+- Tira uma captura de tela da página atual.
+- Sintaxe: Screenshot \<path\>
+- Parâmetro:
+\<path\>: caminho onde a captura de tela será salva.
+- Exemplo:
+`Screenshot  /path/to/screenshot.png`
+
+14. Close Browser
+- Fecha o navegador.
+- Sintaxe: Close Browser
+- Exemplo:
+`Close Browser`
+
+### Estados Aceitos pelo Wait For Elements State
+
+- visible: o elemento está visível na tela.
+- hidden: o elemento não está visível.
+- enabled: o elemento está habilitado.
+- disabled: o elemento está desabilitado.
+- stable: o elemento parou de mudar de posição/dimensão.
+
+### Exemplo Completo de Uso
+``` robot
+*** Settings ***
+Library  Browser
+
+*** Variables ***
+${URL}  https://example.com
+${USERNAME}  my_user
+${PASSWORD}  my_password
+
+*** Test Cases ***
+Login Test
+    New Browser  chromium
+    New Page  ${URL}
+    Set Viewport Size  1280  800
+    Wait For Elements State  xpath=//input[@name='username']  visible
+    Input Text  xpath=//input[@name='username']  ${USERNAME}
+    Input Text  xpath=//input[@name='password']  ${PASSWORD}
+    Click  xpath=//button[@type='submit']
+    Wait For Elements State  xpath=//h1[text()='Welcome']  visible
+    ${title}=  Get Title
+    Should Be Equal  ${title}  Welcome
+    Screenshot  /path/to/screenshot.png
+    Close Browser
+```
+
+
+
 
 
 
