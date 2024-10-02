@@ -1,0 +1,93 @@
+{"level":30,"time":"2024-10-02T13:38:53.080Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Listening on 54329"}
+(node:32081) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-02T13:38:54.147Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:54.147Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:54.152Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:54.152Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:54.159Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-02T13:38:54.297Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Adding browser to stack: chromium, version: 129.0.6668.29"}
+{"level":30,"time":"2024-10-02T13:38:54.298Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-02T13:38:54.298Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-02T13:38:54.300Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-02T13:38:54.300Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-02T13:38:54.304Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Changed active context"}
+{"level":30,"time":"2024-10-02T13:38:54.370Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-02T13:38:54.370Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Changed active page"}
+{"level":30,"time":"2024-10-02T13:38:54.378Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method newPage"}
+{"level":30,"time":"2024-10-02T13:38:54.380Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2024-10-02T13:38:54.381Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2024-10-02T13:38:54.383Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:54.383Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//*[@role='heading' and contains(., 'Flutter Demo Home Page')] in page."}
+{"level":30,"time":"2024-10-02T13:38:55.319Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.328Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.328Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[span[contains(text(), 'You have pushed the button this many times:')]] in page."}
+{"level":30,"time":"2024-10-02T13:38:55.330Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.333Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.333Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5'] in page."}
+{"level":30,"time":"2024-10-02T13:38:55.335Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.337Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:55.337Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5']/span in page."}
+{"level":30,"time":"2024-10-02T13:38:55.348Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Retrieved text for element xpath=//flt-semantics[@id='flt-semantic-node-5']/span containing 0"}
+{"level":30,"time":"2024-10-02T13:38:55.348Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:55.350Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.350Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] in page."}
+{"level":30,"time":"2024-10-02T13:38:55.351Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:55.352Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-02T13:38:55.352Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] in page."}
+{"level":30,"time":"2024-10-02T13:38:55.378Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method click"}
+{"level":30,"time":"2024-10-02T13:38:56.388Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:56.388Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5'] in page."}
+{"level":30,"time":"2024-10-02T13:38:56.392Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:56.395Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:56.395Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5']/span in page."}
+{"level":30,"time":"2024-10-02T13:38:56.402Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Retrieved text for element xpath=//flt-semantics[@id='flt-semantic-node-5']/span containing 1"}
+{"level":30,"time":"2024-10-02T13:38:56.402Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:56.405Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:56.405Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] in page."}
+{"level":30,"time":"2024-10-02T13:38:56.406Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:56.409Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-02T13:38:56.409Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] in page."}
+{"level":30,"time":"2024-10-02T13:38:56.422Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method click"}
+{"level":30,"time":"2024-10-02T13:38:57.431Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:57.432Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5'] in page."}
+{"level":30,"time":"2024-10-02T13:38:57.436Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-02T13:38:57.440Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:57.440Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Strict mode is enabled, find Locator with xpath=//flt-semantics[@id='flt-semantic-node-5']/span in page."}
+{"level":30,"time":"2024-10-02T13:38:57.449Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Retrieved text for element xpath=//flt-semantics[@id='flt-semantic-node-5']/span containing 2"}
+{"level":30,"time":"2024-10-02T13:38:57.449Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-02T13:38:57.452Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-10-02T13:38:57.458Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Removed page=3b1cb5ac-46ab-4b4d-a3b9-dc1249d4cfcf from context=4cc89f9f-8370-4b6d-b7be-5b9c04f26ddf page stack"}
+{"level":30,"time":"2024-10-02T13:38:57.482Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:11364:59)
+    at PlaywrightServer.setTimeout (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:11603:57)
+    at Object.onReceiveHalfClose (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-02T13:38:57.486Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:57.486Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:11364:59)
+    at PlaywrightServer.setTimeout (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js:11603:57)
+    at Object.onReceiveHalfClose (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/Users/raphael.pontes/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-02T13:38:57.489Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:57.489Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-02T13:38:57.507Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-02T13:38:57.507Z","pid":32081,"hostname":"EXA-MACGMGCF66VWQ.local","msg":"End of node method closeAllBrowsers"}

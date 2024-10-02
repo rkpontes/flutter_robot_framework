@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.9.6 on darwin)" generated="2024-10-02T10:38:52.822751" rpa="false" schemaversion="5">
+<suite id="s1" name="Main" source="/Users/raphael.pontes/Documents/Projetos/Flutter/POCs/flutter_robot_framework/test/robot/main.robot">
+<test id="s1-t1" name="Test Increment Counter" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-10-02T10:38:54.156213" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/raphael.pontes/Documents/Projetos/Flutter/POCs/flutter_robot_framework/browser/traces/0252a8d5-c844-43c6-a72e-1f70a3acd2c1"}</msg>
+<msg time="2024-10-02T10:38:54.298874" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/raphael.pontes/Documents/Projetos/Flutter/POCs/flutter_robot_framework/browser/traces/0252a8d5-c844-43c6-a72e-1f70a3acd2c1"}</msg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-10-02T10:38:54.154918" elapsed="0.144083"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-02T10:38:54.378783" level="INFO">Successfully initialized new page object and opened url: http://localhost:8080</msg>
+<msg time="2024-10-02T10:38:54.378843" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-10-02T10:38:54.299208" elapsed="0.079738"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-10-02T10:38:54.381677" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-10-02T10:38:54.379203" elapsed="0.002560"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:55.320278" level="INFO">Waited for Element with selector xpath=//*[@role='heading' and contains(., 'Flutter Demo Home Page')] at state visible</msg>
+<arg>xpath=//*[@role='heading' and contains(., 'Flutter Demo Home Page')]</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:54.381979" elapsed="0.938458"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:55.331617" level="INFO">Waited for Element with selector xpath=//flt-semantics[span[contains(text(), 'You have pushed the button this many times:')]] at state visible</msg>
+<arg>xpath=//flt-semantics[span[contains(text(), 'You have pushed the button this many times:')]]</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.320702" elapsed="0.011032"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:55.335896" level="INFO">Waited for Element with selector xpath=//flt-semantics[@id='flt-semantic-node-5'] at state visible</msg>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.331942" elapsed="0.004046"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-02T10:38:55.348838" level="INFO">Text: '0'</msg>
+<msg time="2024-10-02T10:38:55.348942" level="INFO">${initial_value} = 0</msg>
+<var>${initial_value}</var>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']/span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.336215" elapsed="0.012743"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${initial_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.349140" elapsed="0.000149"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:55.351658" level="INFO">Waited for Element with selector xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] at state visible</msg>
+<arg>xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.349392" elapsed="0.002338"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-02T10:38:55.352142" level="INFO">Clicks the element 'xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']'.</msg>
+<arg>xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.351924" elapsed="0.027114"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-02T10:38:56.380267" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-02T10:38:55.379229" elapsed="1.001578"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:56.392883" level="INFO">Waited for Element with selector xpath=//flt-semantics[@id='flt-semantic-node-5'] at state visible</msg>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.381909" elapsed="0.011207"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-02T10:38:56.403229" level="INFO">Text: '1'</msg>
+<msg time="2024-10-02T10:38:56.403362" level="INFO">${incremented_value} = 1</msg>
+<var>${incremented_value}</var>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']/span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.393509" elapsed="0.009879"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${incremented_value}</arg>
+<arg>1</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.403598" elapsed="0.000197"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:56.407118" level="INFO">Waited for Element with selector xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button'] at state visible</msg>
+<arg>xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.403937" elapsed="0.003280"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-02T10:38:56.407859" level="INFO">Clicks the element 'xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']'.</msg>
+<arg>xpath=//flt-semantics[@aria-label='incrementButton']//flt-semantics[@role='button']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.407494" elapsed="0.015595"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-02T10:38:57.425095" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-02T10:38:56.423384" elapsed="1.002249"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-02T10:38:57.437546" level="INFO">Waited for Element with selector xpath=//flt-semantics[@id='flt-semantic-node-5'] at state visible</msg>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']</arg>
+<arg>visible</arg>
+<arg>${WAIT_TIME}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-02T10:38:57.426885" elapsed="0.010866"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-02T10:38:57.449827" level="INFO">Text: '2'</msg>
+<msg time="2024-10-02T10:38:57.450104" level="INFO">${incremented_value_2} = 2</msg>
+<var>${incremented_value_2}</var>
+<arg>xpath=//flt-semantics[@id='flt-semantic-node-5']/span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-02T10:38:57.438132" elapsed="0.012034"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${incremented_value_2}</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-02T10:38:57.450623" elapsed="0.000340"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-10-02T10:38:57.482974" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-02T10:38:57.451134" elapsed="0.031991"/>
+</kw>
+<status status="PASS" start="2024-10-02T10:38:54.150320" elapsed="3.333025"/>
+</test>
+<status status="PASS" start="2024-10-02T10:38:52.823393" elapsed="4.663655"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
